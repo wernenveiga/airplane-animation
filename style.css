@@ -1,0 +1,56 @@
+.scene {
+  background-image: url(city-1.jpg);
+  background-size: contain;
+  height: 234px;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.scene img {
+  position: absolute;
+}
+.plane {
+  top: 50%;
+  left: -50px;
+  width: 25%;
+  animation: plane-move 15s linear forwards;
+}
+.cloud {
+  animation: clouds-move 22s linear forwards;
+}
+.cloud-1 {
+  width: 70px;
+  top: 0;
+  left: 30px;
+}
+.cloud-2 {
+  width: 35px;
+  top: 20px;
+  left: 125px;
+}
+.cloud-3 {
+  width: 45px;
+  top: 55px;
+  left: 155px;
+}
+.car {
+  width: 30%;
+  bottom: 0;
+  right: -50px;
+  animation: car-move 20s linear forwards;
+}
+@keyframes plane-move {
+  to {
+    transform: translate(450px, -150px);
+  }
+}
+@keyframes clouds-move {
+  to {
+    transform: translateX(200px);
+  }
+}
+@keyframes car-move {
+  to {
+    transform: translateX(-450px);
+  }
+}
